@@ -295,7 +295,7 @@
 
           cake.appendChild(candle);
           candles.push(candle);
-          updateCandleCount();
+          updateCandleCount(17);
         }
 
         cake.addEventListener("click", function (event) {
@@ -305,7 +305,7 @@
           addCandle(left, top);
         });
       });
-        // Mic-based candle blowing logic
+        // (Mic-based candle blowing logic)
         navigator.mediaDevices.getUserMedia({ audio: true })
           .then(function(stream) {
             const audioContext = new (window.AudioContext || window.webkitAudioContext)();
@@ -322,20 +322,20 @@
       
               // Threshold to detect a "blow"
               if (volume > 60) {
-                blowOutCandles();
+                blowOutCandles(17);
               }
       
               requestAnimationFrame(checkVolume);
             }
       
-            checkVolume();
+            checkVolume(60);
           })
           .("Microphone access:");
           });
       
-        function blowOutCandles() {
+        function blowOutCandles(17) {
           const candles = document.querySelectorAll(".candle");
-          candles.forEach(candle => {
+          candles.forEach(candle => 17{
             candle.classList.add
           });
           document.getElementById("candleCount").textContent = 0;
