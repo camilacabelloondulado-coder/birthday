@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Happy Birthday 🎉</title>
+    <title>feliz pumpe Justin🎉</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -193,9 +193,9 @@
   </head>
   <body>
     <canvas id="confettiCanvas"></canvas>
-    <div class="happy-birthday-banner">Happy Birthday Rajat!</div>
+    <div class="happy-birthday-banner">Feliz cumple Justin!</div>
     <div class="candle-count-display">
-      Number of candles on cake: <span id="candleCount">0</span>
+      Number of candles on cake: <span id="candleCount">17</span>
     </div>
     <div class="cake-container">
       <div class="cake">
@@ -275,7 +275,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         const cake = document.querySelector(".cake");
         const candleCountDisplay = document.getElementById("candleCount");
-        let candles = [];
+        let candles = [17];
 
         function updateCandleCount() {
           const activeCandles = candles.filter(
@@ -296,7 +296,7 @@
 
           cake.appendChild(candle);
           candles.push(candle);
-          updateCandleCount();
+          updateCandleCount(17);
         }
 
         cake.addEventListener("click", function (event) {
