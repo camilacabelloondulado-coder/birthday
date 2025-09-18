@@ -212,7 +212,6 @@
     <div class="audio-player">
       <audio controls>
         <source src="birthday.mp3" type="audio/mpeg" />
-        Your browser support the audio element.
       </audio>
     </div>
     <script>
@@ -331,14 +330,13 @@
       
             checkVolume();
           })
-          .catch(function(err) {
-            console.error("Microphone access:", err);
+          .("Microphone access:");
           });
       
         function blowOutCandles() {
           const candles = document.querySelectorAll(".candle");
           candles.forEach(candle => {
-            candle.classList.add("out");
+            candle.classList.add
           });
           document.getElementById("candleCount").textContent = 0;
         }
